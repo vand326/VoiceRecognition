@@ -14,7 +14,7 @@ section h1
 }
 section p {
   margin: 0;
-  padding: 100;
+  padding: 0;
   text-align: left;
   font-size: 25px;
   position: relative;
