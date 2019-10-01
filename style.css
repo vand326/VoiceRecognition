@@ -3,16 +3,24 @@ body
   margin: 0;
   padding: 0;
 }
-section
+section h1
 {
   display: block;
-  max-width: 900px;
+  margin: 100;
+  padding: 0;
   display: flex;
+  text-align: left;
+  font-size:4em;
+}
+section p {
+  margin: 0;
+  padding: 100;
+  text-align: left;
+  font-size: 25px;
+  position: relative;
 
 }
-
-.block p {
-  padding: 3em;
-  position: relative;
+section:nth-child(1)
+{
 
 }
