@@ -22,7 +22,13 @@ section p
   font-size: 25px;
   position: relative;
 }
-section:nth-child(1)
-{
 
+h1
+{
+  display: block;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  font-size:8em;
 }
