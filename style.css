@@ -9,6 +9,7 @@ body
 section h1
 {
   display: block;
+  display: flex;
   margin: 1000;
   padding: 0;
   display: flex;
@@ -19,11 +20,12 @@ section h1
 
 section p
  {
+  display: block;
+  display: flex;
   margin: 0;
   padding: 0;
   text-align: left;
   font-size: 25px;
-  position: relative;
   width: 800px;
   text-transform: uppercase;
 }
