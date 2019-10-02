@@ -82,9 +82,9 @@ p1
 
 .a
 {
-  text-align:right;
-  width: 1000px;
-  float: right;
+  text-align:center;
+  width: 800px;
+  float: center;
 }
 
 nav
