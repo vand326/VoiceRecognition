@@ -38,11 +38,40 @@ h1
   text-transform: uppercase;
 }
 
+h2
+{
+  display: block;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  font-size: 5em;
+  text-transform: uppercase;
+}
+
+h3
+{
+  display: block;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  font-size: 5em;
+  text-transform: uppercase;
+}
+
 p
 {
   font-size: 25px;
   position: relative;
   text-transform: uppercase;
+}
+
+p1
+{
+  font-size: 25px;
+  position: relative;
+  text-transform: uppercase;
+  width: 500px;
+  text-align: center;
 }
 
 .container
