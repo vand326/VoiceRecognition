@@ -1,7 +1,10 @@
 let mic, fft, w;
+var canvas;
 
 function setup() {
- createCanvas(700,700);
+ canvas = createCanvas(1400,700);
+ canvas.position(300,7300);
+
  colorMode(HSB);
  mic = new p5.AudioIn();
  mic.start();
@@ -11,7 +14,7 @@ function setup() {
 }
 
 function draw() {
- background(0);
+ background(255);
 
  var spectrum = fft.analyze();
  console.log(spectrum);
