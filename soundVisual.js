@@ -1,6 +1,7 @@
 let mic, fft, w;
 var canvas;
 
+
 function windowResized() {
  resizeCanvas(windowWidth, windowHeight);
 }
@@ -11,12 +12,16 @@ function setup() {
  canvas.position(0,0);
  canvas.style('z-index', '-1');
 
+
+
  colorMode(HSB);
  mic = new p5.AudioIn();
  mic.start();
  fft = new p5.FFT(0.9, 512);
  fft.setInput(mic);
  w = width/100;
+
+
 
  let lang = navigator.language || 'en-US';
  let speechRec = new p5.SpeechRec(lang, gotSpeech);
@@ -33,7 +38,7 @@ function setup() {
 }
 
 function draw() {
- background(255);
+ clear();
 
  var spectrum = fft.analyze();
  // console.log(spectrum);
