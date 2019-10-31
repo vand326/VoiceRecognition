@@ -124,3 +124,7 @@ nav a:hover
 {
   color: #000;
 }
+
+canvas {
+   position: fixed !important;
+}

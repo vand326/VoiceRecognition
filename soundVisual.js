@@ -47,7 +47,4 @@ function draw() {
   }
   stroke(255);
   noFill();
-
-
-
 }
