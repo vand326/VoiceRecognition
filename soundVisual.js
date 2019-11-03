@@ -1,6 +1,9 @@
-let mic, fft, w;
-var canvas;
 
+//sound visual
+let mic, fft, w;
+
+//canvas
+var canvas;
 
 function windowResized() {
  resizeCanvas(windowWidth, windowHeight);
@@ -8,20 +11,17 @@ function windowResized() {
 
 
 function setup() {
+//canvas locked on screen
  canvas = createCanvas(windowWidth, windowHeight);
  canvas.position(0,0);
  canvas.style('z-index', '-1');
 
-
-
- colorMode(HSB);
+//sound visual
  mic = new p5.AudioIn();
  mic.start();
  fft = new p5.FFT(0.9, 512);
  fft.setInput(mic);
  w = width/100;
-
-
 
  let lang = navigator.language || 'en-US';
  let speechRec = new p5.SpeechRec(lang, gotSpeech);
@@ -35,10 +35,18 @@ function setup() {
      createP(speechRec.resultString);
    }
  }
+
 }
 
 function draw() {
  clear();
+
+ // stroke(0);
+ // line(0, 280, 1900, 280);
+ //
+ // stroke(0);
+ // line(0, 780, 1900, 780);
+
 
  var spectrum = fft.analyze();
  // console.log(spectrum);
@@ -47,9 +55,9 @@ function draw() {
   for (var i = 0; i < spectrum.length; i++) {
    var amp = spectrum[i];
    var y = map(amp, 0, 100, height, 0);
-   fill(i, 255, 255);
+   fill(i, 30);
    rect(i * w, y, w- 2, height - y);
   }
-  stroke(255);
-  noFill();
+
+
 }
