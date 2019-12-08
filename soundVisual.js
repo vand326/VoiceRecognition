@@ -3,7 +3,7 @@
 let mic, fft, w;
 
 //canvas
-var canvas;
+
 
 function windowResized() {
  resizeCanvas(windowWidth, windowHeight);
@@ -12,7 +12,7 @@ function windowResized() {
 
 function setup() {
 //canvas locked on screen
- canvas = createCanvas(windowWidth, windowHeight);
+ var canvas = createCanvas(windowWidth, windowHeight);
  canvas.position(0,0);
  canvas.style('z-index', '-1');
 
